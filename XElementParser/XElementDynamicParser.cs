@@ -132,6 +132,7 @@ namespace Case_of_t.net.DynamicParsers {
                 AddElementValueAndValuesAsProperties(item, target.Nodes().OfType<XText>());
                 AddAttributesAsProperties(item, target.Attributes());
                 Parse(item, target);
+                list.Add(item);
             }
         }
 

@@ -6,7 +6,7 @@ using System.Xml.Linq;
 using Case_of_t.net.DynamicParsers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Case_of_t.net.DynamicParsers.XElementDynamicParserTest {
+namespace Case_of_t.net.DynamicParsers {
 
     [TestClass]
     public class TestXElementDynamicParser {
@@ -57,8 +57,8 @@ namespace Case_of_t.net.DynamicParsers.XElementDynamicParserTest {
                     (x.test as object).Is(av);
                     (x.Value as object).Is(ev);
                     foreach (var f in x.b.c.cd.e.f) {
-                        f.attrF.Is(afv);
-                        f.Value.Is(efv);
+                        (f.attrF as object).Is(afv);
+                        (f.Value as object).Is(efv);
                     }
                     (x.b.c.cA.B.C.attrC as object).Is(aCv);
                     (x.b.c.cA.B.C.Value as object).Is(eCv);
@@ -74,7 +74,7 @@ namespace Case_of_t.net.DynamicParsers.XElementDynamicParserTest {
                     var expectIndex = 0;
 
                     foreach (var ele in x.b) {
-                        ele.Value.Is(expects[expectIndex]);
+                        (ele.Value as object).Is(expects[expectIndex]);
                         expectIndex++;
                     }
                 });
@@ -88,7 +88,7 @@ namespace Case_of_t.net.DynamicParsers.XElementDynamicParserTest {
                     var expectIndex = 0;
 
                     foreach (var ele in x.b) {
-                        ele.attr.Value.Is(expects[expectIndex]);
+                        (ele.attr as object).Is(expects[expectIndex]);
                         expectIndex++;
                     }
                 });

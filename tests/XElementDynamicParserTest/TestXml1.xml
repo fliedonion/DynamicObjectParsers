@@ -1,0 +1,60 @@
+﻿<root>
+  <itemList>
+    <item>
+      <ID>001</ID>
+      <Name>Alice</Name>
+      <Age>15</Age>
+    </item>
+    <item>
+      <ID>002</ID>
+      <Name>Bob</Name>
+      <Age>15</Age>
+    </item>
+    <item>
+      <ID>003</ID>
+      <Name>Caroline</Name>
+      <Age>18</Age>
+    </item>
+  </itemList>
+  <PlaceList>
+    <Place>
+      <State Country="US">New York</State>
+    </Place>
+    <Place>
+      <State Country="Japan">Tokyo</State>
+    </Place>
+    <Place>
+      <State Country="UK">London</State>
+    </Place>
+  </PlaceList>
+  <NestedList>
+    <itemList>
+      <item>
+        <ID>001</ID>
+        <Name>Alice</Name>
+        <Age>15</Age>
+      </item>
+      <item>
+        <ID>002</ID>
+        <Name>Bob</Name>
+        <Age>15</Age>
+      </item>
+      <item>
+        <ID>003</ID>
+        <Name>Caroline</Name>
+        <Age>18</Age>
+      </item>
+    </itemList>
+    <PlaceList>
+      <Place>
+        <State Country="US">Washington D.C.</State>
+      </Place>
+      <Place>
+        <State Country="Japan">Tokyo</State>
+      </Place>
+      <Place>
+        <State Country="UK">London</State>
+      </Place>
+    </PlaceList>
+  </NestedList>
+</root>
